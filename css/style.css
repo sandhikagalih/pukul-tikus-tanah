@@ -1,13 +1,61 @@
-h1, h2 {
+h1 {
   font-size: 60px;
   text-align: center;
   font-family: arial;
   margin: 10px;
 }
 
-button {
-  display: block;
-  margin: auto;
+.skor {
+  margin-left: 27%;
+  font-size: 20px;
+  text-align: right;
+  font-family: 'PT Mono';
+}
+
+.level {
+  margin-left: 23%;
+  font-size: 20px;
+  text-align: right;
+  font-family: 'PT Mono';
+}
+
+.nama {
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'PT Mono';
+}
+
+body {
+  background-color: #ff9900;
+}
+
+.myButton {
+  margin-top: 15px;
+  box-shadow: inset 3px 0px 14px -3px #f2fadc;
+  background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+  background-color: #dbe6c4;
+  border-radius: 6px;
+  border: 1px solid #b2b8ad;
+  display: inline-block;
+  cursor: pointer;
+  color: #757d6f;
+  font-family: Arial;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 15px 57px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ced9bf;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+  background-color: #9ba892;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 .container {
@@ -51,4 +99,43 @@ button {
 
 .tanah.muncul .tikus {
   top: -15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'PT Mono';
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
