@@ -6,14 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pukul Tikus Tanah</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono|Lacquer&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <h1>Pukul Tikus Tanah</h1>
 
-  <button type="button" class="mulai" onclick="mulai()">Mulai!</button>
-
-  <h2 class="papan-skor">0</h2>
+  <div>
+    <label class="nama">
+      <b> Waktu : </b>
+      <b> <span class="timer">00:00 </span> </b>
+    </label>
+    <label class="level">
+      <input type="radio" id="levels" name="levels" value="1" checked="checked">Mudah</input>
+      <input type="radio" id="levels" name="levels" value="2">Sedang</input>
+      <input type="radio" id="levels" name="levels" value="3">Sulit</input>
+    </label>
+    <label class="skor">
+      <b> Skor : <span class="papan-skor">0</span> </b>
+    </label>
+  </div>
+  <div style="text-align: center;">
+    <button type="button" class="myButton" onclick="mulai()">START</button>
+  </div>
 
   <div class="container">
     <div class="tanah">
@@ -33,6 +48,14 @@
     </div>
     <div class="tanah">
       <div class="tikus"></div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Waktu Selesai!!</p>
     </div>
   </div>
 
