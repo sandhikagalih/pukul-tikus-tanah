@@ -1,13 +1,15 @@
-h1, h2 {
+h1,
+h2 {
   font-size: 60px;
   text-align: center;
   font-family: arial;
   margin: 10px;
 }
 
-button {
+.button-group {
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .container {
@@ -29,7 +31,7 @@ button {
 }
 
 .tanah::after {
-  content: '';
+  content: "";
   display: block;
   width: 200px;
   height: 100px;
@@ -45,7 +47,7 @@ button {
   background: url(../img/tikus.png) bottom center no-repeat;
   background-size: 60%;
   position: absolute;
-  top: 100px;
+  top: 120px; /* Fix lokasi tikus */
   transition: top 0.3s;
 }
 
