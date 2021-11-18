@@ -2,7 +2,7 @@ const tanah = document.querySelectorAll('.tanah');
 const tikus = document.querySelectorAll('.tikus');
 const papanSkor = document.querySelector('.papan-skor');
 const pop = document.querySelector('#pop');
-
+///// Hello,test fork pertama
 let tanahSebelumnya;
 let selesai;
 let skor;
